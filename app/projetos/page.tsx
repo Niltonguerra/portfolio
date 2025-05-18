@@ -1,13 +1,11 @@
-import Menu from "./components/Menu";
 
-export default function Home() {
+export default function Projetos() {
   return (
     <body>
       <header>
 
       </header>
       <main>
-        <Menu/>
       </main>
       <footer>
       </footer>
