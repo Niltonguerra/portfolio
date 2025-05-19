@@ -1,5 +1,8 @@
 "use client";
+
 import { useEffect, useRef } from "react";
+import "./LightSpot.scss";
+
 
 export default function LightSpot() {
   const spotRef = useRef<HTMLDivElement>(null);

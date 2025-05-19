@@ -1,5 +1,9 @@
-import "./globals.css";
-import LightSpot from "./components/LightSpot";
+import LightSpot from './components/organisms/LightSpot/LightSpot';
+import './globals.css';
+import { Inter, Montserrat } from 'next/font/google';
+
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
+const montserrat = Montserrat({ subsets: ['latin'], variable: '--font-montserrat' });
 
 export const metadata = {
   title: 'Nilton Dionisio Guerra',
@@ -9,21 +13,10 @@ export const metadata = {
   },
 };
 
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt-br" suppressHydrationWarning={true} data-lt-installed="true">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-      </head>
-      <body
-        className="bg-background" 
-        cz-shortcut-listen="true"
-        data-new-gr-c-s-check-loaded="14.1235.0"
-        data-gr-ext-installed=""
-       >
+    <html lang="pt-br" className={`${inter.variable} ${montserrat.variable}`}>
+      <body>
         <LightSpot />
         {children}
       </body>
