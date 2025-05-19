@@ -1,13 +1,14 @@
-import Menu from "./components/Menu";
+import { Fragment } from "react";
+import Header from "./components/Header";
 
 export default function Home() {
   return (
-    <body className="bg-background">
-      <Menu/>
+    <Fragment>
+      <Header/>
       <main>  
       </main>
       <footer>
       </footer>
-    </body>
+    </Fragment>
   );
 }

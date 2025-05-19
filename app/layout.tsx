@@ -1,4 +1,5 @@
 import "./globals.css";
+import LightSpot from "./components/LightSpot";
 
 export const metadata = {
   title: 'Nilton Dionisio Guerra',
@@ -17,7 +18,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
       </head>
+      <body
+        className="bg-background" 
+        cz-shortcut-listen="true"
+        data-new-gr-c-s-check-loaded="14.1235.0"
+        data-gr-ext-installed=""
+       >
+        <LightSpot />
         {children}
+      </body>
     </html>
   );
 }

@@ -9,9 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.5.16",
     "next": "15.3.2",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "sass": "^1.89.0",
+    "tailwindcss-pseudo-elements": "^2.0.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
